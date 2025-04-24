@@ -57,26 +57,38 @@ class ArchiveItem:
                 i += 3
         return content
 class Book:
+    super
     author = None
     pages = None
-    def __init__(self,var1,var2):
-        self.author = var1
-        self.pages = var2
+    def __init__(super,self,var1,var2,var3,var4,var5):
+        super.uid = var1
+        super.title = var2
+        super.year = var3
+        self.author = var4
+        self.pages = var5
     def __str__(self):
         return self.author+" "+self.pages
 class Article:
+    super
     journal = None
     doi = None
-    def __init__(self,var1,var2):
-        self.journal = var1
-        self.doi = var2
+    def __init__(super,self,var1,var2,var3,var4,var5):
+        super.uid = var1
+        super.title = var2
+        super.year = var3
+        self.journal = var4
+        self.doi = var5
     def __str__(self):
         return self.journal+" "+self.doi
 class Podcast:
+    super
     host = None
     duration = None
-    def __init__(self,var1,var2):
-        self.host = var1
-        self.duration = var2
+    def __init__(super,self,var1,var2,var3,var4,var5):
+        super.uid = var1
+        super.title = var2
+        super.year = var3
+        self.host = var4
+        self.duration = var5
     def __str__(self):
         return self.host+" "+self.duration
